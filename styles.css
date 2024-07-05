@@ -1,4 +1,6 @@
 html {
+  color: white;
+  background-color: rgb(35, 56, 63);
   width: 100%;
   height: 100%;
   display: Flex;
@@ -27,10 +29,21 @@ fieldset div {
   align-items: center;
   gap: 40px;
 }
+button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: cadetblue;
+  width: 70px;
+  height: 40px;
+  border-radius: 4px;
+}
 fieldset button {
   margin: 0 auto;
-  width: 80px;
-  height: 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 120px;
+  height: 50px;
 }
 
 .your-books {
@@ -55,13 +68,4 @@ fieldset button {
 #book-edit {
   display: flex;
   gap: 10px;
-}
-#book-edit > button {
-  border: none;
-  color: white;
-  font-weight: 600;
-  background-color: cadetblue;
-  width: 70px;
-  height: 40px;
-  border-radius: 4px;
 }
