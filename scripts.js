@@ -3,14 +3,12 @@ const myLibrary = [];
 function Book(title, author) {
   this.title = title;
   this.author = author;
+  this.read = false;
   this.info = function () {
     return `${this.title} by ${this.author}`;
   };
 }
-
-function addBookToLibrary() {}
 const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien");
-
 console.log(theHobbit.info());
 // "The Hobbit by J.R.R. Tolkien, 295 pages, not read yet"
 
@@ -31,8 +29,12 @@ formSubmit.addEventListener("click", (e) => {
     newUnreadButton.addEventListener("click", () => {
       if (newUnreadButton.textContent === "Unread") {
         newUnreadButton.textContent = "Read";
+        newBook.read = true;
+        console.log(newBook);
       } else if (newUnreadButton.textContent === "Read") {
         newUnreadButton.textContent = "Unread";
+        newBook.read = false;
+        console.log(newBook);
       }
     });
 
