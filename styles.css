@@ -1,0 +1,67 @@
+html {
+  width: 100%;
+  height: 100%;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: inherit;
+  width: inherit;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 40px;
+  padding: 40px;
+}
+fieldset div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+fieldset button {
+  margin: 0 auto;
+  width: 80px;
+  height: 40px;
+}
+
+.your-books {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+}
+
+#book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  word-wrap: break-word;
+}
+#book-text {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 250px;
+}
+#book-edit {
+  display: flex;
+  gap: 10px;
+}
+#book-edit > button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: cadetblue;
+  width: 70px;
+  height: 40px;
+  border-radius: 4px;
+}

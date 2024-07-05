@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Insert Book Info</legend>
+        <div>
+          <label for="book-name">Title: </label>
+          <input
+            type="text"
+            id="book-name"
+            name="book-name"
+            placeholder="The Lord of the Rings"
+          />
+        </div>
+
+        <div>
+          <label for="book-name">Author: </label>
+          <input
+            type="text"
+            id="book-author"
+            name="book-author"
+            placeholder="J.R.R. Tolkien"
+          />
+        </div>
+
+        <button id="submit" type="button">Submit</button>
+      </fieldset>
+    </form>
+    <div class="your-books">
+      <h1>Your Books</h1>
+    </div>
+  </body>
+</html>
