@@ -30,12 +30,11 @@ formSubmit.addEventListener("click", (e) => {
       if (newUnreadButton.textContent === "Unread") {
         newUnreadButton.textContent = "Read";
         newBook.read = true;
-        console.log(newBook);
       } else if (newUnreadButton.textContent === "Read") {
         newUnreadButton.textContent = "Unread";
         newBook.read = false;
-        console.log(newBook);
       }
+      console.log(newBook);
     });
 
     newDeleteButton.addEventListener("click", () => {
